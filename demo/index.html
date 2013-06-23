@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery Behance Demo</title>
+    <link rel="stylesheet" href="../lib/colorbox/example3/colorbox.css">
+    <link rel="stylesheet" href="jquery.behance.css">
+  </head>
+ 
+  <body>
+    
+    <!-- Container for portfolio gallery -->
+    <div id="be-grid" class="group"></div>
+    <div id="be-popup" class="mfp-hide"></div>
+    
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+		if (!window.jQuery) {
+		    document.write('<script src="../lib/jquery-1.9.1.min.js"><\/script>');
+		}
+		</script>
+    <script src="../lib/colorbox/colorbox/jquery.colorbox-min.js"></script>
+    <script src="../jquery.behance.js"></script>
+    <script>
+    
+      $(document).ready(function() {
+
+        $('#be-grid').behance({
+	        // Sorry, I haven't set up a demo Behance account. You'll need to use yours!
+          apiKey: 'R@ND0M5TRINGFROM8EHANC3',
+          user: 'username',
+          // The featured_date is the default sort order, but must explicitly set.
+          // Other sort options are appreciations, views, comments, and published_date.
+          sort: 'featured_date',
+          gridID: '#be-grid',
+          cssItem: 'be-item group',
+          cssTitle: 'green',
+          cssMore: 'button',
+          colorbox:  {
+            slideshow: false,
+            transition: 'elastic'
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+/**
+ *  Project:
+ *  Description:
+ *  Author:
+ *  License:
+ *
+ *  /v2/users/user
+ *  /v2/projects/project_id
+ */
+
+/* Buttons */
+
+.button {
+  background-color: #e7e7e7;
+	border-radius: 6px;
+  display: block;
+	letter-spacing: 4px;
+	padding: 6px 12px;
+  text-transform: uppercase;
+}
+
+#be-showmore {
+  
+}
+
+/* Project images */
+
+#be-grid {
+  margin: 48px 0 0 0;
+  padding: 0;
+  display: relative;
+}
+
+.be-item {
+  float: left;
+  margin: 0 50px 36px 0;
+  padding: 18px 12px 0 12px;
+  text-align: center;
+  width: 226px;
+  box-shadow: 2px 2px 2px #c8cfc5;
+  -moz-box-shadow: 2px 2px 2px #c8cfc5;
+  -webkit-box-shadow: 2px 2px 2px #c8cfc5;
+}
+
+.be-item:hover {
+  -moz-box-shadow: inset 2px 2px 2px #c8cfc5;
+  -webkit-box-shadow: inset 2px 2px 2px #c8cfc5;
+  box-shadow: inset 2px 2px 2px #c8cfc5;
+}
+
+.be-item img {
+  margin: 0;
+  line-height: 0;
+}
+
+.be-item h2 {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Clear fix for floated elements */
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
